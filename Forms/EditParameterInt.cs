@@ -24,7 +24,7 @@ namespace ApplicationParameterTest
         {
             InitializeComponent();
             ComboBoxInit();
-            controls.LoadCombo();
+            controls.Load();
         }
         private void IntPropertyForm_Load(object sender, EventArgs e)
         {

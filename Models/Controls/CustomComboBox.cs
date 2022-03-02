@@ -30,7 +30,7 @@ namespace ApplicationParameterTest.Models
             {"Okategoriserade", "Okategoriserade"}
         };
 
-        public void LoadCombo()
+        public void Load()
         {
             string sqlQuery = "Select Distinct [objectCategory] As objectCategory FROM Prodex_ApplicationParameterData";
             con.Open();

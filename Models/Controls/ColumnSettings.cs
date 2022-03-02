@@ -33,39 +33,6 @@ namespace ApplicationParameterTest.Models
 
         public ColumnSettings(ParameterForm form)
         {
-            dvgAll = form.dvg_all;
-            showControls = form.dvg_showcontrols;
-            settings = form.dvg_settings;
-            email = form.dvg_email;
-            movex = form.dvg_movex;
-            printer = form.dvg_printer;
-            timeInterval = form.dvg_timeinterval;
-            tableSettings = form.dvg_tablesettings;
-            admission = form.dvg_admission;
-            machineRecipe = form.dvg_machinerecipe;
-            planningGroup = form.dvg_planninggroup;
-            completion = form.dvg_completion;
-            ITAG = form.dvg_itag;
-            shift = form.dvg_shift;
-            misc = form.dvg_misc;
-            watchDog = form.dvg_watchdog;
-
-            dvgList.Add(dvgAll);
-            dvgList.Add(showControls);
-            dvgList.Add(settings);
-            dvgList.Add(email);
-            dvgList.Add(movex);
-            dvgList.Add(printer);
-            dvgList.Add(timeInterval);
-            dvgList.Add(tableSettings);
-            dvgList.Add(admission);
-            dvgList.Add(machineRecipe);
-            dvgList.Add(planningGroup);
-            dvgList.Add(completion);
-            dvgList.Add(ITAG);
-            dvgList.Add(shift);
-            dvgList.Add(misc);
-            dvgList.Add(watchDog);
         }
         public void HideColumns(int[] columnIndex)
         {

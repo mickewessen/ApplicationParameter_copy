@@ -59,7 +59,7 @@ namespace ApplicationParameterTest
             // linkLabelImage
             // 
             this.linkLabelImage.AutoSize = true;
-            this.linkLabelImage.Location = new System.Drawing.Point(99, 359);
+            this.linkLabelImage.Location = new System.Drawing.Point(99, 351);
             this.linkLabelImage.Name = "linkLabelImage";
             this.linkLabelImage.Size = new System.Drawing.Size(27, 15);
             this.linkLabelImage.TabIndex = 120;
@@ -69,7 +69,7 @@ namespace ApplicationParameterTest
             // 
             // btnSaveDoc
             // 
-            this.btnSaveDoc.Location = new System.Drawing.Point(39, 327);
+            this.btnSaveDoc.Location = new System.Drawing.Point(39, 319);
             this.btnSaveDoc.Name = "btnSaveDoc";
             this.btnSaveDoc.Size = new System.Drawing.Size(25, 25);
             this.btnSaveDoc.TabIndex = 118;
@@ -79,7 +79,7 @@ namespace ApplicationParameterTest
             // linkLabelDoc
             // 
             this.linkLabelDoc.AutoSize = true;
-            this.linkLabelDoc.Location = new System.Drawing.Point(99, 332);
+            this.linkLabelDoc.Location = new System.Drawing.Point(99, 324);
             this.linkLabelDoc.Name = "linkLabelDoc";
             this.linkLabelDoc.Size = new System.Drawing.Size(63, 15);
             this.linkLabelDoc.TabIndex = 119;
@@ -89,7 +89,7 @@ namespace ApplicationParameterTest
             // 
             // btnRemoveImage
             // 
-            this.btnRemoveImage.Location = new System.Drawing.Point(70, 354);
+            this.btnRemoveImage.Location = new System.Drawing.Point(70, 346);
             this.btnRemoveImage.Name = "btnRemoveImage";
             this.btnRemoveImage.Size = new System.Drawing.Size(25, 25);
             this.btnRemoveImage.TabIndex = 116;
@@ -99,7 +99,7 @@ namespace ApplicationParameterTest
             // lbdocumentList
             // 
             this.lbdocumentList.AutoSize = true;
-            this.lbdocumentList.Location = new System.Drawing.Point(99, 307);
+            this.lbdocumentList.Location = new System.Drawing.Point(99, 299);
             this.lbdocumentList.Name = "lbdocumentList";
             this.lbdocumentList.Size = new System.Drawing.Size(66, 15);
             this.lbdocumentList.TabIndex = 117;
@@ -107,7 +107,7 @@ namespace ApplicationParameterTest
             // 
             // btnSaveImage
             // 
-            this.btnSaveImage.Location = new System.Drawing.Point(39, 354);
+            this.btnSaveImage.Location = new System.Drawing.Point(39, 346);
             this.btnSaveImage.Name = "btnSaveImage";
             this.btnSaveImage.Size = new System.Drawing.Size(25, 25);
             this.btnSaveImage.TabIndex = 115;
@@ -133,7 +133,7 @@ namespace ApplicationParameterTest
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 117);
+            this.label6.Location = new System.Drawing.Point(27, 109);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 15);
             this.label6.TabIndex = 112;
@@ -141,7 +141,7 @@ namespace ApplicationParameterTest
             // 
             // richTextBoxnote
             // 
-            this.richTextBoxnote.Location = new System.Drawing.Point(98, 114);
+            this.richTextBoxnote.Location = new System.Drawing.Point(98, 106);
             this.richTextBoxnote.Name = "richTextBoxnote";
             this.richTextBoxnote.Size = new System.Drawing.Size(250, 150);
             this.richTextBoxnote.TabIndex = 111;
@@ -150,7 +150,7 @@ namespace ApplicationParameterTest
             // txtboxUpdatedBy
             // 
             this.txtboxUpdatedBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxUpdatedBy.Location = new System.Drawing.Point(262, 420);
+            this.txtboxUpdatedBy.Location = new System.Drawing.Point(262, 412);
             this.txtboxUpdatedBy.Name = "txtboxUpdatedBy";
             this.txtboxUpdatedBy.ReadOnly = true;
             this.txtboxUpdatedBy.Size = new System.Drawing.Size(158, 16);
@@ -159,7 +159,7 @@ namespace ApplicationParameterTest
             // txtUpdatedTime
             // 
             this.txtUpdatedTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUpdatedTime.Location = new System.Drawing.Point(98, 420);
+            this.txtUpdatedTime.Location = new System.Drawing.Point(98, 412);
             this.txtUpdatedTime.Name = "txtUpdatedTime";
             this.txtUpdatedTime.ReadOnly = true;
             this.txtUpdatedTime.Size = new System.Drawing.Size(158, 16);
@@ -168,7 +168,7 @@ namespace ApplicationParameterTest
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 420);
+            this.label5.Location = new System.Drawing.Point(20, 412);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 15);
             this.label5.TabIndex = 108;
@@ -177,14 +177,14 @@ namespace ApplicationParameterTest
             // comboBoxCategory
             // 
             this.comboBoxCategory.FormattingEnabled = true;
-            this.comboBoxCategory.Location = new System.Drawing.Point(98, 85);
+            this.comboBoxCategory.Location = new System.Drawing.Point(98, 77);
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(158, 23);
             this.comboBoxCategory.TabIndex = 107;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(98, 270);
+            this.btnBrowse.Location = new System.Drawing.Point(98, 262);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse.TabIndex = 105;
@@ -193,7 +193,7 @@ namespace ApplicationParameterTest
             // 
             // txtParameterId
             // 
-            this.txtParameterId.Location = new System.Drawing.Point(262, 85);
+            this.txtParameterId.Location = new System.Drawing.Point(262, 77);
             this.txtParameterId.Name = "txtParameterId";
             this.txtParameterId.ReadOnly = true;
             this.txtParameterId.Size = new System.Drawing.Size(86, 23);
@@ -202,7 +202,7 @@ namespace ApplicationParameterTest
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(205, 391);
+            this.btnCancel.Location = new System.Drawing.Point(205, 383);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 23);
             this.btnCancel.TabIndex = 102;
@@ -212,7 +212,7 @@ namespace ApplicationParameterTest
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(99, 391);
+            this.btnUpdate.Location = new System.Drawing.Point(99, 383);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(100, 23);
             this.btnUpdate.TabIndex = 101;
@@ -223,7 +223,7 @@ namespace ApplicationParameterTest
             // txtCreatedBy
             // 
             this.txtCreatedBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCreatedBy.Location = new System.Drawing.Point(98, 442);
+            this.txtCreatedBy.Location = new System.Drawing.Point(98, 434);
             this.txtCreatedBy.Name = "txtCreatedBy";
             this.txtCreatedBy.ReadOnly = true;
             this.txtCreatedBy.Size = new System.Drawing.Size(158, 16);
@@ -248,7 +248,7 @@ namespace ApplicationParameterTest
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(27, 88);
+            this.label.Location = new System.Drawing.Point(27, 80);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(51, 15);
             this.label.TabIndex = 97;
@@ -257,7 +257,7 @@ namespace ApplicationParameterTest
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 442);
+            this.label4.Location = new System.Drawing.Point(21, 434);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 15);
             this.label4.TabIndex = 96;
@@ -274,7 +274,7 @@ namespace ApplicationParameterTest
             // 
             // btnRemoveDocument
             // 
-            this.btnRemoveDocument.Location = new System.Drawing.Point(70, 327);
+            this.btnRemoveDocument.Location = new System.Drawing.Point(70, 319);
             this.btnRemoveDocument.Name = "btnRemoveDocument";
             this.btnRemoveDocument.Size = new System.Drawing.Size(25, 25);
             this.btnRemoveDocument.TabIndex = 121;

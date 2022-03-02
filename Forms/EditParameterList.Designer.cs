@@ -60,8 +60,6 @@ namespace ApplicationParameterTest
             this.linkLabelImage = new System.Windows.Forms.LinkLabel();
             this.btnBrowseImage = new System.Windows.Forms.Button();
             this.lbList = new System.Windows.Forms.Label();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // txtParameterId
@@ -344,20 +342,11 @@ namespace ApplicationParameterTest
             this.lbList.TabIndex = 129;
             this.lbList.Text = "Lista";
             // 
-            // pictureBox
-            // 
-            this.pictureBox.Location = new System.Drawing.Point(310, 283);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(22, 15);
-            this.pictureBox.TabIndex = 130;
-            this.pictureBox.TabStop = false;
-            // 
             // EditParameterList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 632);
-            this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.lbList);
             this.Controls.Add(this.btnBrowseImage);
             this.Controls.Add(this.btnRemoveDocument);
@@ -393,7 +382,6 @@ namespace ApplicationParameterTest
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Lista";
             this.Load += new System.EventHandler(this.CharSemicolonForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,6 +420,5 @@ namespace ApplicationParameterTest
         public System.Windows.Forms.LinkLabel linkLabelImage;
         private System.Windows.Forms.Button btnBrowseImage;
         private System.Windows.Forms.Label lbList;
-        public System.Windows.Forms.PictureBox pictureBox;
     }
 }
