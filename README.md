@@ -4,7 +4,7 @@ Hej!
 
 Tack för att ni tar er tid att titta på min kod!
 
-Jag har förberett lite frågeställning kring några funderingar och databasen finns upplagd i projektet som dbcopy.
+Jag har förberett lite frågeställning kring några funderingar jag har.
 
 1. Som det är nu anropas databasen i en foreach loop när de dynamiska gridviews skapas i FillDataDynamically(), jag har funderat på om man kan läsa in all data en gång och 
    istället filtrera med hjälp av Dataview men stötte på lite problem med att allokera rätt data till rätt gridview. Hur skulle ni ha gjort?
@@ -17,6 +17,8 @@ Jag har förberett lite frågeställning kring några funderingar och databasen 
 
 
 En refreshfunktion är tillagd mest för att kunna verifiera att parametrarna ändras med önskat utfall, lösningen är inte speciellt snygg men fungerar (finns ju en befintlig funktion i Prodex)
+
+Databasfilen finns uppladdad i projektet som dpcopy.sql.
 
 Vad gällande UI så är det ett förslag, här finns utrymme för förbättringar men som ni alla känner till, design är svårt :)
 
