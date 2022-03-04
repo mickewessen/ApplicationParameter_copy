@@ -18,7 +18,7 @@ Jag har förberett lite frågeställning kring några funderingar jag har.
 
 En refreshfunktion är tillagd mest för att kunna verifiera att parametrarna ändras med önskat utfall, lösningen är inte speciellt snygg men fungerar (finns ju en befintlig funktion i Prodex)
 
-Databasfilen finns uppladdad i projektet som dpcopy.sql.
+Databasfilen finns uppladdad i projektet som dbcopy.sql.
 
 Vad gällande UI så är det ett förslag, här finns utrymme för förbättringar men som ni alla känner till, design är svårt :)
 
