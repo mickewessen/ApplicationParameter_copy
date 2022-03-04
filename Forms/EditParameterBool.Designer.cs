@@ -29,6 +29,7 @@ namespace ApplicationParameterTest
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label6 = new System.Windows.Forms.Label();
             this.richTextBoxnote = new System.Windows.Forms.RichTextBox();
             this.txtboxUpdatedBy = new System.Windows.Forms.TextBox();
@@ -38,9 +39,7 @@ namespace ApplicationParameterTest
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.txtCreatedBy = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
             this.checkboxBool = new ApplicationParameterTest.Models.CustomCheckBoxModel();
@@ -56,6 +55,8 @@ namespace ApplicationParameterTest
             this.btnRemoveImage = new System.Windows.Forms.Button();
             this.btnSaveImage = new System.Windows.Forms.Button();
             this.btnBroweseDocument = new System.Windows.Forms.Button();
+            this.MyToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.btnInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -79,7 +80,7 @@ namespace ApplicationParameterTest
             // 
             this.txtboxUpdatedBy.BackColor = System.Drawing.SystemColors.Control;
             this.txtboxUpdatedBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxUpdatedBy.Location = new System.Drawing.Point(259, 410);
+            this.txtboxUpdatedBy.Location = new System.Drawing.Point(90, 432);
             this.txtboxUpdatedBy.Name = "txtboxUpdatedBy";
             this.txtboxUpdatedBy.ReadOnly = true;
             this.txtboxUpdatedBy.Size = new System.Drawing.Size(158, 16);
@@ -141,16 +142,6 @@ namespace ApplicationParameterTest
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // txtCreatedBy
-            // 
-            this.txtCreatedBy.BackColor = System.Drawing.SystemColors.Control;
-            this.txtCreatedBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCreatedBy.Location = new System.Drawing.Point(90, 432);
-            this.txtCreatedBy.Name = "txtCreatedBy";
-            this.txtCreatedBy.ReadOnly = true;
-            this.txtCreatedBy.Size = new System.Drawing.Size(158, 16);
-            this.txtCreatedBy.TabIndex = 60;
-            // 
             // label
             // 
             this.label.AutoSize = true;
@@ -159,15 +150,6 @@ namespace ApplicationParameterTest
             this.label.Size = new System.Drawing.Size(51, 15);
             this.label.TabIndex = 57;
             this.label.Text = "Kategori";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 432);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 15);
-            this.label4.TabIndex = 56;
-            this.label4.Text = "Skapad av";
             // 
             // label3
             // 
@@ -207,7 +189,7 @@ namespace ApplicationParameterTest
             // 
             // txtParameterId
             // 
-            this.txtParameterId.Location = new System.Drawing.Point(265, 78);
+            this.txtParameterId.Location = new System.Drawing.Point(311, 449);
             this.txtParameterId.Name = "txtParameterId";
             this.txtParameterId.ReadOnly = true;
             this.txtParameterId.Size = new System.Drawing.Size(86, 23);
@@ -228,6 +210,7 @@ namespace ApplicationParameterTest
             this.btnBrowseImage.Name = "btnBrowseImage";
             this.btnBrowseImage.Size = new System.Drawing.Size(30, 30);
             this.btnBrowseImage.TabIndex = 139;
+            this.MyToolTip.SetToolTip(this.btnBrowseImage, "Bläddra efter bild");
             this.btnBrowseImage.UseVisualStyleBackColor = true;
             this.btnBrowseImage.Click += new System.EventHandler(this.BrowseImage);
             // 
@@ -237,6 +220,7 @@ namespace ApplicationParameterTest
             this.btnRemoveDocument.Name = "btnRemoveDocument";
             this.btnRemoveDocument.Size = new System.Drawing.Size(30, 30);
             this.btnRemoveDocument.TabIndex = 138;
+            this.MyToolTip.SetToolTip(this.btnRemoveDocument, "Ta bort dokument");
             this.btnRemoveDocument.UseVisualStyleBackColor = true;
             this.btnRemoveDocument.Click += new System.EventHandler(this.btnRemoveDocument_Click);
             // 
@@ -266,6 +250,7 @@ namespace ApplicationParameterTest
             this.btnSaveDoc.Name = "btnSaveDoc";
             this.btnSaveDoc.Size = new System.Drawing.Size(30, 30);
             this.btnSaveDoc.TabIndex = 135;
+            this.MyToolTip.SetToolTip(this.btnSaveDoc, "Spara dokument");
             this.btnSaveDoc.UseVisualStyleBackColor = true;
             this.btnSaveDoc.Click += new System.EventHandler(this.btnSaveDoc_Click);
             // 
@@ -286,6 +271,7 @@ namespace ApplicationParameterTest
             this.btnRemoveImage.Name = "btnRemoveImage";
             this.btnRemoveImage.Size = new System.Drawing.Size(30, 30);
             this.btnRemoveImage.TabIndex = 134;
+            this.MyToolTip.SetToolTip(this.btnRemoveImage, "Ta bort bild");
             this.btnRemoveImage.UseVisualStyleBackColor = true;
             this.btnRemoveImage.Click += new System.EventHandler(this.btnRemoveImage_Click);
             // 
@@ -295,6 +281,7 @@ namespace ApplicationParameterTest
             this.btnSaveImage.Name = "btnSaveImage";
             this.btnSaveImage.Size = new System.Drawing.Size(30, 30);
             this.btnSaveImage.TabIndex = 133;
+            this.MyToolTip.SetToolTip(this.btnSaveImage, "Spara bild");
             this.btnSaveImage.UseVisualStyleBackColor = true;
             this.btnSaveImage.Click += new System.EventHandler(this.btnSaveImage_Click);
             // 
@@ -304,8 +291,18 @@ namespace ApplicationParameterTest
             this.btnBroweseDocument.Name = "btnBroweseDocument";
             this.btnBroweseDocument.Size = new System.Drawing.Size(30, 30);
             this.btnBroweseDocument.TabIndex = 131;
+            this.MyToolTip.SetToolTip(this.btnBroweseDocument, "Bläddra efter dokument");
             this.btnBroweseDocument.UseVisualStyleBackColor = true;
             this.btnBroweseDocument.Click += new System.EventHandler(this.BrowseDocument);
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.Location = new System.Drawing.Point(265, 76);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(25, 25);
+            this.btnInfo.TabIndex = 140;
+            this.MyToolTip.SetToolTip(this.btnInfo, "För att manuellt lägga till en kategori skriv in önskat kategorinamn i fältet");
+            this.btnInfo.UseVisualStyleBackColor = true;
             // 
             // EditParameterBool
             // 
@@ -313,6 +310,7 @@ namespace ApplicationParameterTest
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(409, 484);
+            this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.btnBrowseImage);
             this.Controls.Add(this.btnRemoveDocument);
             this.Controls.Add(this.linkLabelImage);
@@ -335,9 +333,7 @@ namespace ApplicationParameterTest
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.txtCreatedBy);
             this.Controls.Add(this.label);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label101);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -360,9 +356,7 @@ namespace ApplicationParameterTest
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnUpdate;
-        public System.Windows.Forms.TextBox txtCreatedBy;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label101;
         public Models.CustomCheckBoxModel checkboxBool;
@@ -378,5 +372,7 @@ namespace ApplicationParameterTest
         private System.Windows.Forms.Button btnBroweseDocument;
         public System.Windows.Forms.TextBox txtStringValue;
         public System.Windows.Forms.TextBox txtParameterId;
+        private System.Windows.Forms.ToolTip MyToolTip;
+        private System.Windows.Forms.Button btnInfo;
     }
 }

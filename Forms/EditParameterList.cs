@@ -18,7 +18,7 @@ namespace ApplicationParameterTest
         private SqlCommand cmd;
         public MessagesModel messages = new();
         public CustomComboBox controls =new();
-        public Dictionary<string, string> dict2 = new Dictionary<string, string>();
+        public Dictionary<string, string> categoryList = new Dictionary<string, string>();
 
         public EditParameterList()
         {
@@ -42,9 +42,9 @@ namespace ApplicationParameterTest
 
             while (dr.Read())
             {
-                dict2.Add(dr.GetString(0), dr.GetString(0));
+                categoryList.Add(dr.GetString(0), dr.GetString(0));
             }
-            comboBoxCategory.DataSource = new BindingSource(dict2, null);
+            comboBoxCategory.DataSource = new BindingSource(categoryList, null);
             comboBoxCategory.DisplayMember = "Text";
             comboBoxCategory.ValueMember = "Value";
             con.Close();
@@ -52,6 +52,7 @@ namespace ApplicationParameterTest
         private void ButtonIcon()
         {
             btnBroweseDocument.Image = new Bitmap(myImages.browse_icon, new Size(20, 20));
+            btnInfo.Image = new Bitmap(myImages.info_icon, new Size(20, 20));
             btnBrowseImage.Image = new Bitmap(myImages.browse_icon, new Size(20, 20));
             btnSaveImage.Image = new Bitmap(myImages.green_checkmark, new Size(20, 20));
             btnRemoveImage.Image = new Bitmap(myImages.redcross, new Size(20, 20));
@@ -59,6 +60,7 @@ namespace ApplicationParameterTest
             btnRemoveDocument.Image = new Bitmap(myImages.redcross, new Size(20, 20));
             btnAddToList.Image = new Bitmap(myImages.green_arrow, new Size(40, 40));
             btnRemoveFromList.Image = new Bitmap(myImages.red_arrow_up, new Size(40, 40));
+            btnRefresh.Image = new Bitmap(myImages.refresh_icon, new Size(40, 40));
         }
         private void ShowButtons()
         {
@@ -107,7 +109,6 @@ namespace ApplicationParameterTest
                 return;
             }
         }
-
         private void BrowseDocument(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new();
@@ -124,7 +125,6 @@ namespace ApplicationParameterTest
                 return;
             }
         }
-
         private void BrowseImage(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new();
@@ -169,6 +169,16 @@ namespace ApplicationParameterTest
             }
             else
                 MessageBox.Show(messages.MessageNoRowsToDelete);
+        }
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            if (semicolonList.SelectedItem != null)
+            {
+                int selectedItem = semicolonList.SelectedIndex;
+                semicolonList.Items.RemoveAt(selectedItem);
+                semicolonList.Items.Insert(selectedItem, txtAddToList.Text);
+            }
+            txtAddToList.Text = null;
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -374,5 +384,9 @@ namespace ApplicationParameterTest
             con.Close();
         }
 
+        //private void btnInfo_Click(object sender, EventArgs e)
+        //{
+        //    MessageBox.Show("För att skapa en ny kategori skriv in önskat kategorinamn i fältet");
+        //}
     }
 }

@@ -41,16 +41,16 @@ namespace ApplicationParameterTest
         }
 
         #region Buttons
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-        }
         private void btnRefresh_Click(object sender, EventArgs e)
         {
 
+            tcApplicationParam.Controls.Clear();
+            CreateTabPagesDynamically();
+            FillDataDynamically();
         }
         #endregion
 
-        #region Tabs and datatables
+        #region Tabs and datatables 
         public void CreateTabPagesDynamically()
         { 
             con.Open();            
@@ -124,7 +124,6 @@ namespace ApplicationParameterTest
                         form.txtParameterId.Text = view.CurrentRow.Cells["objectId"].Value.ToString();
                         form.txtParameterNameSwe.Text = view.CurrentRow.Cells["objectSwedishTitle"].Value.ToString();
                         form.txtStringValue.Text = view.CurrentRow.Cells["stringValue"].Value.ToString();
-                        form.txtCreatedBy.Text = view.CurrentRow.Cells["createdUser"].Value.ToString();
                         form.comboBoxCategory.Text = view.CurrentRow.Cells["objectCategory"].Value.ToString();
                         form.txtboxUpdatedBy.Text = view.CurrentRow.Cells["updatedUser"].Value.ToString();
                         form.txtUpdatedTime.Text = view.CurrentRow.Cells["updated"].Value.ToString();
@@ -156,7 +155,6 @@ namespace ApplicationParameterTest
                         form.txtParameterNameSwe.Text = view.CurrentRow.Cells["objectSwedishTitle"].Value.ToString();
                         form.txtStringValue.Text = view.CurrentRow.Cells["stringValue"].Value.ToString();
                         form.txtboxnumValue.Text = view.CurrentRow.Cells["numValue"].Value.ToString();
-                        form.txtCreatedBy.Text = view.CurrentRow.Cells["createdUser"].Value.ToString();
                         form.comboBoxCategory.Text = view.CurrentRow.Cells["objectCategory"].Value.ToString();
                         form.txtboxUpdatedBy.Text = view.CurrentRow.Cells["updatedUser"].Value.ToString();
                         form.txtUpdatedTime.Text = view.CurrentRow.Cells["updated"].Value.ToString();
@@ -194,7 +192,6 @@ namespace ApplicationParameterTest
                     form.txtStringValue.Text = view.CurrentRow.Cells["stringValue"].Value.ToString();
                     form.txtboxnumValue.Text = view.CurrentRow.Cells["numValue"].Value.ToString();
                     form.comboBoxCategory.Text = view.CurrentRow.Cells["objectCategory"].Value.ToString();
-                    form.txtCreatedBy.Text = view.CurrentRow.Cells["createdUser"].Value.ToString();
                     form.txtboxUpdatedBy.Text = view.CurrentRow.Cells["updatedUser"].Value.ToString();
                     form.txtUpdatedTime.Text = view.CurrentRow.Cells["updated"].Value.ToString();
                     form.richTextBoxnote.Text = view.CurrentRow.Cells["note"].Value.ToString();

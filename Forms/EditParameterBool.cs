@@ -19,6 +19,7 @@ namespace ApplicationParameterTest
         private SqlCommand cmd;
         public MessagesModel messages = new();
         public CustomComboBox controls = new();
+        public Dictionary<string, string> categoryList = new Dictionary<string, string>();
 
         public EditParameterBool()
         {
@@ -35,12 +36,23 @@ namespace ApplicationParameterTest
         }
         public void ComboBoxInit()
         {
-            comboBoxCategory.DataSource = new BindingSource(controls.dict, null);
+            string sqlQuery = "Select Distinct [objectCategory] As objectCategory FROM Prodex_ApplicationParameterData";
+            con.Open();
+            SqlCommand cmd = new(sqlQuery, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                categoryList.Add(dr.GetString(0), dr.GetString(0));
+            }
+            comboBoxCategory.DataSource = new BindingSource(categoryList, null);
             comboBoxCategory.DisplayMember = "Text";
             comboBoxCategory.ValueMember = "Value";
+            con.Close();
         }
         private void ButtonIcon()
         {
+            btnInfo.Image = new Bitmap(myImages.info_icon, new Size(20, 20));
             btnBroweseDocument.Image = new Bitmap(myImages.browse_icon, new Size(20, 20));
             btnBrowseImage.Image = new Bitmap(myImages.browse_icon, new Size(20, 20));
             btnSaveImage.Image = new Bitmap(myImages.green_checkmark, new Size(20, 20));

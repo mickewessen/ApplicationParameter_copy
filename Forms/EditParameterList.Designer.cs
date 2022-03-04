@@ -29,14 +29,13 @@ namespace ApplicationParameterTest
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtParameterId = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.txtCreatedBy = new System.Windows.Forms.TextBox();
             this.txtStringValue = new System.Windows.Forms.TextBox();
             this.txtParameterNameSwe = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
             this.btnBroweseDocument = new System.Windows.Forms.Button();
             this.semicolonList = new System.Windows.Forms.ListBox();
@@ -60,6 +59,9 @@ namespace ApplicationParameterTest
             this.linkLabelImage = new System.Windows.Forms.LinkLabel();
             this.btnBrowseImage = new System.Windows.Forms.Button();
             this.lbList = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnInfo = new System.Windows.Forms.Button();
+            this.MyToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // txtParameterId
@@ -91,15 +93,6 @@ namespace ApplicationParameterTest
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // txtCreatedBy
-            // 
-            this.txtCreatedBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCreatedBy.Location = new System.Drawing.Point(103, 588);
-            this.txtCreatedBy.Name = "txtCreatedBy";
-            this.txtCreatedBy.ReadOnly = true;
-            this.txtCreatedBy.Size = new System.Drawing.Size(158, 16);
-            this.txtCreatedBy.TabIndex = 25;
-            // 
             // txtStringValue
             // 
             this.txtStringValue.Location = new System.Drawing.Point(16, 197);
@@ -125,15 +118,6 @@ namespace ApplicationParameterTest
             this.label.TabIndex = 21;
             this.label.Text = "Kategori";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 588);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 15);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Skapad av";
-            // 
             // label101
             // 
             this.label101.AutoSize = true;
@@ -149,6 +133,7 @@ namespace ApplicationParameterTest
             this.btnBroweseDocument.Name = "btnBroweseDocument";
             this.btnBroweseDocument.Size = new System.Drawing.Size(30, 30);
             this.btnBroweseDocument.TabIndex = 34;
+            this.MyToolTip.SetToolTip(this.btnBroweseDocument, "Bläddra efter dokument");
             this.btnBroweseDocument.UseVisualStyleBackColor = true;
             this.btnBroweseDocument.Click += new System.EventHandler(this.BrowseDocument);
             // 
@@ -173,19 +158,21 @@ namespace ApplicationParameterTest
             // 
             // btnAddToList
             // 
-            this.btnAddToList.Location = new System.Drawing.Point(126, 106);
+            this.btnAddToList.Location = new System.Drawing.Point(108, 106);
             this.btnAddToList.Name = "btnAddToList";
-            this.btnAddToList.Size = new System.Drawing.Size(75, 56);
+            this.btnAddToList.Size = new System.Drawing.Size(60, 56);
             this.btnAddToList.TabIndex = 40;
+            this.MyToolTip.SetToolTip(this.btnAddToList, "Lägg till");
             this.btnAddToList.UseVisualStyleBackColor = true;
             this.btnAddToList.Click += new System.EventHandler(this.btnAddToList_Click);
             // 
             // btnRemoveFromList
             // 
-            this.btnRemoveFromList.Location = new System.Drawing.Point(207, 106);
+            this.btnRemoveFromList.Location = new System.Drawing.Point(240, 106);
             this.btnRemoveFromList.Name = "btnRemoveFromList";
-            this.btnRemoveFromList.Size = new System.Drawing.Size(75, 56);
+            this.btnRemoveFromList.Size = new System.Drawing.Size(60, 56);
             this.btnRemoveFromList.TabIndex = 41;
+            this.MyToolTip.SetToolTip(this.btnRemoveFromList, "Ta bort");
             this.btnRemoveFromList.UseVisualStyleBackColor = true;
             this.btnRemoveFromList.Click += new System.EventHandler(this.btnRemoveFromList_Click);
             // 
@@ -225,7 +212,7 @@ namespace ApplicationParameterTest
             // txtboxUpdatedBy
             // 
             this.txtboxUpdatedBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxUpdatedBy.Location = new System.Drawing.Point(249, 565);
+            this.txtboxUpdatedBy.Location = new System.Drawing.Point(103, 588);
             this.txtboxUpdatedBy.Name = "txtboxUpdatedBy";
             this.txtboxUpdatedBy.ReadOnly = true;
             this.txtboxUpdatedBy.Size = new System.Drawing.Size(120, 16);
@@ -272,6 +259,7 @@ namespace ApplicationParameterTest
             this.btnRemoveDocument.Name = "btnRemoveDocument";
             this.btnRemoveDocument.Size = new System.Drawing.Size(30, 30);
             this.btnRemoveDocument.TabIndex = 127;
+            this.MyToolTip.SetToolTip(this.btnRemoveDocument, "Ta bort dokument");
             this.btnRemoveDocument.UseVisualStyleBackColor = true;
             this.btnRemoveDocument.Click += new System.EventHandler(this.btnRemoveDocument_Click);
             // 
@@ -281,6 +269,7 @@ namespace ApplicationParameterTest
             this.btnSaveImage.Name = "btnSaveImage";
             this.btnSaveImage.Size = new System.Drawing.Size(30, 30);
             this.btnSaveImage.TabIndex = 122;
+            this.MyToolTip.SetToolTip(this.btnSaveImage, "Spara bild");
             this.btnSaveImage.UseVisualStyleBackColor = true;
             this.btnSaveImage.Click += new System.EventHandler(this.btnSaveImage_Click);
             // 
@@ -290,6 +279,7 @@ namespace ApplicationParameterTest
             this.btnRemoveImage.Name = "btnRemoveImage";
             this.btnRemoveImage.Size = new System.Drawing.Size(30, 30);
             this.btnRemoveImage.TabIndex = 123;
+            this.MyToolTip.SetToolTip(this.btnRemoveImage, "Ta bort bild");
             this.btnRemoveImage.UseVisualStyleBackColor = true;
             this.btnRemoveImage.Click += new System.EventHandler(this.btnRemoveImage_Click);
             // 
@@ -310,6 +300,7 @@ namespace ApplicationParameterTest
             this.btnSaveDoc.Name = "btnSaveDoc";
             this.btnSaveDoc.Size = new System.Drawing.Size(30, 30);
             this.btnSaveDoc.TabIndex = 124;
+            this.MyToolTip.SetToolTip(this.btnSaveDoc, "Spara dokument");
             this.btnSaveDoc.UseVisualStyleBackColor = true;
             this.btnSaveDoc.Click += new System.EventHandler(this.btnSaveDoc_Click);
             // 
@@ -318,10 +309,10 @@ namespace ApplicationParameterTest
             this.linkLabelImage.AutoSize = true;
             this.linkLabelImage.Location = new System.Drawing.Point(101, 500);
             this.linkLabelImage.Name = "linkLabelImage";
-            this.linkLabelImage.Size = new System.Drawing.Size(63, 15);
+            this.linkLabelImage.Size = new System.Drawing.Size(27, 15);
             this.linkLabelImage.TabIndex = 126;
             this.linkLabelImage.TabStop = true;
-            this.linkLabelImage.Text = "Dokument";
+            this.linkLabelImage.Text = "Bild";
             this.linkLabelImage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelImage_LinkClicked);
             // 
             // btnBrowseImage
@@ -330,6 +321,7 @@ namespace ApplicationParameterTest
             this.btnBrowseImage.Name = "btnBrowseImage";
             this.btnBrowseImage.Size = new System.Drawing.Size(30, 30);
             this.btnBrowseImage.TabIndex = 128;
+            this.MyToolTip.SetToolTip(this.btnBrowseImage, "Bläddra efter bild");
             this.btnBrowseImage.UseVisualStyleBackColor = true;
             this.btnBrowseImage.Click += new System.EventHandler(this.BrowseImage);
             // 
@@ -342,11 +334,32 @@ namespace ApplicationParameterTest
             this.lbList.TabIndex = 129;
             this.lbList.Text = "Lista";
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(174, 106);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(60, 56);
+            this.btnRefresh.TabIndex = 130;
+            this.MyToolTip.SetToolTip(this.btnRefresh, "Uppdatera");
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.Location = new System.Drawing.Point(310, 46);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(25, 25);
+            this.btnInfo.TabIndex = 131;
+            this.MyToolTip.SetToolTip(this.btnInfo, "För att manuellt lägga till en kategori skriv in önskat kategorinamn i fältet");
+            this.btnInfo.UseVisualStyleBackColor = true;
+            // 
             // EditParameterList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 632);
+            this.Controls.Add(this.btnInfo);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lbList);
             this.Controls.Add(this.btnBrowseImage);
             this.Controls.Add(this.btnRemoveDocument);
@@ -372,11 +385,9 @@ namespace ApplicationParameterTest
             this.Controls.Add(this.txtParameterId);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.txtCreatedBy);
             this.Controls.Add(this.txtStringValue);
             this.Controls.Add(this.txtParameterNameSwe);
             this.Controls.Add(this.label);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label101);
             this.Name = "EditParameterList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -392,11 +403,9 @@ namespace ApplicationParameterTest
         public System.Windows.Forms.TextBox txtParameterId;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnUpdate;
-        public System.Windows.Forms.TextBox txtCreatedBy;
         public System.Windows.Forms.TextBox txtStringValue;
         public System.Windows.Forms.TextBox txtParameterNameSwe;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label101;
         private System.Windows.Forms.Button btnBroweseDocument;
         private System.Windows.Forms.Label label2;
@@ -420,5 +429,8 @@ namespace ApplicationParameterTest
         public System.Windows.Forms.LinkLabel linkLabelImage;
         private System.Windows.Forms.Button btnBrowseImage;
         private System.Windows.Forms.Label lbList;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnInfo;
+        private System.Windows.Forms.ToolTip MyToolTip;
     }
 }
