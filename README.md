@@ -6,8 +6,8 @@ Tack för att ni tar er tid att titta på min kod!
 
 Jag har förberett lite frågeställning kring några funderingar jag har.
 
-1. Som det är nu anropas databasen i en foreach loop när de dynamiska gridviews skapas i FillDataDynamically(), jag har funderat på om man kan läsa in all data en gång och 
-   istället filtrera med hjälp av Dataview men stötte på lite problem med att allokera rätt data till rätt gridview. Hur skulle ni ha gjort?
+1. Som koden är skriven anropas databasen i en foreach loop när de dynamiska gridviews skapas i FillDataDynamically(), jag har funderat på om man kan läsa in all data en gång      och istället filtrera med hjälp av Dataview men stötte på lite problem med att allokera rätt data till rätt gridview. Kan hända att när man inför en klass som DTO underlättar 
+   detta.
 
 2. Tre olika formulär finns och är beroende av vilken typ av parameter som öppnas (bool, int eller lista), eftersom jag inte har en klass att skicka in blir det mycket kod 
    som upprepas i CellDoubleClick(),  undviker man detta genom att läsa in data som en klass istället? Har också märkt att vissa parametrar som bara tar in ett strängvärde som
