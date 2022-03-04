@@ -10,8 +10,8 @@ Jag har förberett lite frågeställning kring några funderingar jag har.
    detta.
 
 2. Tre olika formulär finns och är beroende av vilken typ av parameter som öppnas (bool, int eller lista), eftersom jag inte har en klass att skicka in blir det mycket kod 
-   som upprepas i CellDoubleClick(),  undviker man detta genom att läsa in data som en klass istället? Har också märkt att vissa parametrar som bara tar in ett strängvärde som
-   inte är true/false öppnas i formuläret för lista, detta måste jag hitta en lösning på då vissa parametrar inte är skapade för att ta in semikoliseparerade listor.
+   som upprepas i CellDoubleClick(),  undviker man detta genom att läsa in data som en klass istället? Har också märkt att parametrar som bara tar in ett strängvärde som
+   inte är true/false öppnas i formuläret för listor, detta måste jag hitta en lösning på då dessa parametrar inte är skapade för att ta in semikoliseparerade listor.
    
 3. Samma komponenter används i flera formulär, hade man kunnat skapa en komponent och bara återanvänt?
 
