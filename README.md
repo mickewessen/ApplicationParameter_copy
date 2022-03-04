@@ -4,7 +4,7 @@ Hej!
 
 Tack för att ni tar er tid att titta på min kod!
 
-Jag har förberett lite frågeställning kring några funderingar.
+Jag har förberett lite frågeställning kring några funderingar och databasen finns upplagd i projektet som dbcopy.
 
 1. Som det är nu anropas databasen i en foreach loop när de dynamiska gridviews skapas i FillDataDynamically(), jag har funderat på om man kan läsa in all data en gång och 
    istället filtrera med hjälp av Dataview men stötte på lite problem med att allokera rätt data till rätt gridview. Hur skulle ni ha gjort?
