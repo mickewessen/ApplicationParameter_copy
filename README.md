@@ -18,7 +18,9 @@ Jag har förberett en liten frågeställning där jag själv är intresserad av 
 
 En refreshfunktion är tillagd mest för att kunna verifiera att parametrarna ändras med önskat utfall, lösningen är inte speciellt snygg men fungerar (finns ju en befintlig i Prodex)
 
-Jag önskar input på hur koden är skriven, alternativa lösningar, strukturen etc etc. Vill försöka fånga upp så mycket som möjligt innan koden lyfts över till Prodex :)
+Vad gällande UI så är det ett exempel, här finns det utrymme för förbättringar men som ni alla känner till, design är svårt :)
+
+Jag önskar input på hur koden är skriven, alternativa lösningar, strukturen etc etc. Vill försöka fånga upp så mycket som möjligt innan koden lyfts över till Prodex!
 
 Ha en fin vecka
 Micke 
